@@ -141,8 +141,38 @@
     letter-spacing: 0.48px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  /* FOOTER */
+  .container-footer {
+    max-width: 568px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 24px;
+  }
+  .container-social {
+    text-align: left;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-input {
+    width: 264px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .subscribe-text {
+    text-align: left;
+  }
 }
-
 /* DESKTOP  */
 @media screen and (min-width: 1158px) {
   .container {
@@ -326,59 +356,149 @@
   .contacts-link:focus {
     color: #404bbf;
   }
-}
-/* hero-section */
-/* .hero-section {
-  background-color: #2e2f42;
-  padding: 188px 0 188px;
-  max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/hero/Dark-bg_mob.jpg");
-}
 
-.hero-title {
-  max-width: 496px;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  margin-bottom: 48px;
-}
-.hero-button {
-  display: block;
-  margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  color: #fff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  /* FOOTER */
+   {
+    background-color: #2e2f42;
+    padding: 100px 0 100px;
+  }
+  .container-footer {
+    max-width: 1158px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #404bbf;
-}
+  .footer-logo {
+    display: inline-block;
+    color: #4d5ae5;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .container-logo-text {
+    margin-right: 120px;
+  }
+  .footer-logo-style {
+    color: #f4f4fd;
+  }
+  .footer-text {
+    max-width: 264px;
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .container-social {
+    margin-right: 80px;
+  }
+  .social-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  .social-list-footer {
+    display: flex;
+    gap: 16px;
+  }
+  .social-item-footer {
+    width: 40px;
+    height: 40px;
+  }
+  .social-link-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-icon-footer {
+    fill: #f4f4fd;
+  }
+  .social-link-footer:hover {
+    background-color: #31d0aa;
+  }
+  .social-link-footer:focus {
+    background-color: #31d0aa;
+  }
 
- */
+  .subscribe-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-input::placeholder {
+    color: #ffffff;
+  }
 
-/* .backdrop {
+  .subscribe-input {
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  .button-footer {
+    min-width: 165px;
+    height: 40px;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--IRIS, #4d5ae5);
+    color: var(--WHITE, #fff);
+    outline: transparent;
+    border: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-footer:hover,
+  .button-footer:focus {
+    background-color: #404bbf;
+  }
+  .icon-telegram {
+    fill: #ffffff;
+    margin-left: 16px;
+  }
+
+ /* MODAL WINDOW */
+
+.backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -446,11 +566,9 @@
 }
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* END Modal */
-
-/* .modal-button {
+.modal-button {
   display: block;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -568,7 +686,13 @@
 }
 .checkbox-privacy {
   color: #4d5ae5;
-} */
+}
+}
+/* END Modal WINDOW */
+
+
+
+
 
 /* .header {
   background-color: #fff;
@@ -925,3 +1049,56 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
 } */
+
+
+
+
+
+/* hero-section */
+/* .hero-section {
+  background-color: #2e2f42;
+  padding: 188px 0 188px;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/Dark-bg_mob.jpg");
+}
+
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  margin-bottom: 48px;
+}
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
