@@ -27,6 +27,14 @@
     width: 768px;
   }
   /* hero-section */
+  .hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  margin-bottom: 36px;
+  }
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -552,7 +560,7 @@
   }
 
   /* FOOTER */
-   {
+  .footer {
     background-color: #2e2f42;
     padding: 100px 0 100px;
   }
@@ -640,9 +648,9 @@
     display: flex;
     gap: 24px;
   }
-  .subscribe-input::placeholder {
+  /* .subscribe-input::placeholder {
     color: #ffffff;
-  }
+  } */
 
   .subscribe-input {
     width: 264px;
